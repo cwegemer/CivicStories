@@ -13,7 +13,7 @@
     "openai": "^4.52.7"
   },
   "apiConfig": {
-    "apiKey": "sk-proj-hdGc4mOfoeaCqZ8ItXszT3BlbkFJX0Wp2xMMZyufAWotk2gq",
+    "apiKey": "ADD_KEY",
     "endpoint": "https://api.openai.com/v1/chat/completions"
   }
 }
