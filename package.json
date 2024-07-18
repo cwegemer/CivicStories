@@ -10,10 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
+    "dotenv": "^16.4.5",
     "openai": "^4.52.7"
   },
   "apiConfig": {
-    "apiKey": "ADD_KEY",
+    "apiKey": "sk-proj-hdGc4mOfoeaCqZ8ItXszT3BlbkFJX0Wp2xMMZyufAWotk2gq",
     "endpoint": "https://api.openai.com/v1/chat/completions"
   }
 }

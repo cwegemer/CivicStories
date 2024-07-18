@@ -131,7 +131,7 @@ const startChat = async () => {
       askForName();
       return;
     }
-    console.log('THE CODE NEVER GETS THIS FAR!!!! The bot only relies on the general system command, it never executes askForAffiliation or askForStoryPermission or proceedToStory!!!!');
+
     rl.question('You: ', async (answer) => {
       if (answer.toLowerCase() === 'exit') {
         console.log('Exiting chat...');
@@ -192,7 +192,7 @@ const startChat = async () => {
   const proceedToStory = async () => {
     if (nameProvided && affiliationProvided && permissionProvided && !storyTold) {
       const storyOutline = readStoryOutline(userAffiliation);
-      messages.push({ role: 'system', content: `Here is the outline of the story: ${storyOutline}. Use this outline to tell the story. Do not tell the user that you obtained the story from this outline.` });
+      messages.push({ role: 'system', content: `Here is the outline of the story: ${storyOutline}. Do not tell the user that you obtained the story from this outline.` });
       messages.push({ role: 'assistant', content: `Great! Let me tell you my story.` });
 
       const storyResponse = await sendMessage(messages);
